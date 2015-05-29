@@ -6,7 +6,7 @@ https://registry.hub.docker.com/u/mcandre/docker-apache-slim/
 
 # ABOUT
 
-docker-apache-slim is a container for downloading URLs with apache, made smaller with a few techniques:
+docker-apache-slim is a container for apache, made smaller with a few techniques:
 
 * Switch base image from [ubuntu](https://registry.hub.docker.com/_/ubuntu/) to [alpine](https://registry.hub.docker.com/u/alpine/).
 
