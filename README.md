@@ -16,7 +16,7 @@ docker-apache-slim is a container for apache, made smaller with a few techniques
 $ make
 docker run -d -p 80:80 mcandre/docker-apache-slim
 9d2472b03f8fc21d91806b46d648d05a971642b6c7e2a0cdb4a0df9efd659aab
-curl http://$(boot2docker ip)
+curl http://$(docker-machine ip default)
 <html><body><h1>It works!</h1></body></html>
 ```
 
@@ -43,8 +43,7 @@ $ sudo yum install docker-io
 ## non-Linux
 
 * [VirtualBox](https://www.virtualbox.org/)
-* [Vagrant](https://www.vagrantup.com/)
-* [boot2docker](http://boot2docker.io/)
+* [Docker Toolbox](https://www.docker.com/toolbox)
 
 ### Mac OS X
 
@@ -53,8 +52,7 @@ $ sudo yum install docker-io
 * [brew-cask](http://caskroom.io/)
 
 ```
-$ brew cask install virtualbox vagrant
-$ brew install boot2docker
+$ brew cask install dockertoolbox
 ```
 
 ### Windows
@@ -62,5 +60,7 @@ $ brew install boot2docker
 * [Chocolatey](https://chocolatey.org/)
 
 ```
-> chocolatey install docker make
+> chocolatey install virtualbox make
 ```
+
+* [DockerToolbox-1.8.2c.exe](https://github.com/docker/toolbox/releases/download/v1.8.2c/DockerToolbox-1.8.2c.exe)
